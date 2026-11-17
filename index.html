@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuad Hasan · Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;800&family=Geist+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <b id="navName">Fuad Hasan</b>
+  <a class="pill-btn" href="#contact">Let's talk</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge"><i></i> Available for new projects</span>
+      <h1 class="name" id="heroName">Fuad<br>Hasan</h1>
+      <p class="tagline" id="heroTagline">Class 12 · Science · Abdul Awal Degree College</p>
+      <div class="btns">
+        <a class="pill-btn" href="#about">About me</a>
+        <a class="btn-ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- ID card stage -->
+    <div class="id-stage" id="idStage">
+      <canvas id="idCanvas"></canvas>
+      <div class="id-card" id="idCard">
+        <div class="id-top"><span>CREW PASS</span><span>● REC</span></div>
+        <div class="id-photo"><img id="idPhoto" alt=""></div>
+        <div class="id-role" id="idRole">Student</div>
+        <div class="id-name" id="idName">Fuad Hasan</div>
+        <div class="id-bar"></div>
+      </div>
+      <div class="hint">GRAB THE CARD ↑</div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <p class="mono label">01 — About</p>
+    <h2>Mask reveal.</h2>
+    <div class="hero-grid" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <div class="reveal" id="reveal">
+          <img id="revealNormal" alt="Fuad Hasan">
+          <div class="hero-layer" id="revealHero"></div>
+          <div class="lens-ring" id="lensRing"></div>
+        </div>
+        <p class="cap mono">HOVER THE PHOTO</p>
+      </div>
+      <div>
+        <p class="about">I'm Fuad Hasan, a Class 12 science student at Abdul Awal Degree College. I'm studying science and looking forward to what comes next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <p class="mono label">02 — Contact</p>
+    <div class="contact-card">
+      <h3>Let's talk.</h3>
+      <div id="contactRows"></div>
+      <div class="social" id="socialRow"></div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> <span id="footName">Fuad Hasan</span></footer>
+
+<!-- ADMIN PANEL -->
+<div id="admin" hidden style="position:fixed;inset:0;z-index:100;background:#121110;overflow:auto;padding:24px;">
+  <div style="max-width:620px;margin:0 auto;">
+    <p class="mono" style="color:var(--accent);margin-bottom:10px;">Admin · edit your info</p>
+    <div id="adminLogin">
+      <input id="adminPass" type="password" placeholder="Password" style="width:100%;padding:12px;border-radius:10px;border:1px solid #333;background:#1a1917;color:#fff;font-size:16px;">
+      <button id="adminEnter" class="pill-btn" style="margin-top:12px;">Enter</button>
+      <p id="adminMsg" style="margin-top:10px;font-size:14px;color:#a8a39b;"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
